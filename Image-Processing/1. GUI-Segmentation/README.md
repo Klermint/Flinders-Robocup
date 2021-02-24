@@ -4,7 +4,7 @@ This program goes through the basics of image segmentation using the opencv libr
 
 The program achieves this by first converting the BGR image (pycharm/opencv uses BGR instead of RGB because RGB was copyrighted) into its HSV range (Hue, Saturation, Value). Using the inRange function, the HSV values in range are masked. Morphological Operations are applied to the 
 
-##Additional Links
+## Additional Links
 Gaussian Blur
 * https://www.adobe.com/au/creativecloud/photography/discover/gaussian-blur.html
 * https://homepages.inf.ed.ac.uk/rbf/HIPR2/gsmooth.htm
