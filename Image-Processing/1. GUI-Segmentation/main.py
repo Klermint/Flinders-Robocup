@@ -16,7 +16,7 @@ cv2.createTrackbar('Hue_High', 'ColourSegmentation', starting_colour[3], 255, no
 cv2.createTrackbar('Sat_High', 'ColourSegmentation', starting_colour[4], 255, nothing)
 cv2.createTrackbar('Val_High', 'ColourSegmentation', starting_colour[5], 255, nothing)
 # Assign the Image file of the soccer ball to determine HSV classification.
-Original = cv2.imread('ball72.jpg')
+Original = cv2.imread('red3.png')
 # Obtain the HSV values from the Colour Sliders.
 while True:
     Hue_Low = cv2.getTrackbarPos('Hue_Low', 'ColourSegmentation')
