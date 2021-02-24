@@ -26,7 +26,6 @@ while True:
     Sat_High = cv2.getTrackbarPos('Sat_High', 'ColourSegmentation')
     Val_High = cv2.getTrackbarPos('Val_High', 'ColourSegmentation')
     # Display the unedited first photo that was uploaded.
-    Original = cv2.resize(Original, (700,400))
     cv2.imshow('InputtedImage', Original)
     # Apply the Gaussian Blur filter to reduce unwanted noise and reduce detail to create the mask
     Image_BGR = cv2.GaussianBlur(Original, (7, 7), 0)
@@ -45,8 +44,7 @@ while True:
     # Display the mask after the Morpholgical Operations have been applied
     cv2.imshow('MaskedImage', mask)
     # Inserts the mask over the original image that was uploaded
-
-
+    result = cv2.bitwise_and(Original, Original, mask=mask)
     # Outputs the final image that has had the HSV model segmented
     #result = cv2.resize(result, (700, 400))
     cv2.imshow('ColourSegmentation', result)
