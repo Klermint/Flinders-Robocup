@@ -14,6 +14,6 @@ Links for HSV
 Links for Masking
 
 Morphological Operations (Dilation & Erosion)
-. https://www.mathworks.com/help/images/morphological-dilation-and-erosion.html#:~:text=Morphology%20is%20a%20broad%20set,process%20images%20based%20on%20shapes.&text=In%20a%20morphological%20operation%2C%20the,input%20image%20with%20its%20neighbors
+* https://www.mathworks.com/help/images/morphological-dilation-and-erosion.html#:~:text=Morphology%20is%20a%20broad%20set,process%20images%20based%20on%20shapes.&text=In%20a%20morphological%20operation%2C%20the,input%20image%20with%20its%20neighbors
 
 Se
