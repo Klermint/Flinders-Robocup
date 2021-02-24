@@ -1,8 +1,8 @@
 # GUI Segmentation
 
-This program goes through the basics of image segmentation using the opencv library on python. The program uses Gaussian Blur to blur the image
+This program goes through the basics of image segmentation using the opencv library on python. The program first uses Gaussian Blur to blur the image to remove noise in the image. The image is then converted from BGR (Blue, Green, Red) to HSV (Hue, Saturation, Value/Brightness/Luminance). (Note: OpenCV images are in BGR instead of RGB due to previous copyright issues, it's stupid) HSV is used because it separates color imformation (chroma) from intensity or lighting. The inRange function is used to isolate the 'red' in the HSV image masking the ball. Dilation is used to fill in any black spots within the ball while erosion is used to 'erode' the edges of the mask.
 
-The program achieves this by first converting the BGR image (pycharm/opencv uses BGR instead of RGB because RGB was copyrighted) into its HSV range (Hue, Saturation, Value). Using the inRange function, the HSV values in range are masked. Morphological Operations are applied to the 
+To learn more about HSV Segmentation, feel free to copy this code and insert your own image and play around with the sliders.
 
 ## Additional Links
 Gaussian Blur
