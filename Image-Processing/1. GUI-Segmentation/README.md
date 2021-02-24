@@ -2,7 +2,7 @@
 
 This program goes through the basics of image segmentation using the opencv library on python. The program first uses Gaussian Blur to blur the image to remove noise in the image. The image is then converted from BGR (Blue, Green, Red) to HSV (Hue, Saturation, Value/Brightness/Luminance). (Note: OpenCV images are in BGR instead of RGB due to previous copyright issues, it's stupid) HSV is used because it separates color imformation (chroma) from intensity or lighting. The inRange function is used to isolate the 'red' in the HSV image masking the ball. Dilation is used to fill in any black spots within the ball while erosion is used to 'erode' the edges of the mask.
 
-To learn more about HSV Segmentation, feel free to copy this code and insert your own image and play around with the sliders.
+To learn more about HSV Segmentation, feel free to copy this code and insert your own image and play around with the sliders. To insert your own image, add the image into the same folder as the code and replace 'red3.png' with the name of your own image.
 
 ## Additional Links
 Gaussian Blur
