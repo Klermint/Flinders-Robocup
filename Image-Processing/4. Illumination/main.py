@@ -97,7 +97,7 @@ for i in circles[0, :]:
 
 cv2.imshow('hough', res)
 
-# display histogram
+# plot and display histogram
 # plt.hist(res.ravel(), 256, [0,256])
 # plt.show()
 
