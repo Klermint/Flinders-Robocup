@@ -21,5 +21,5 @@ Gamma Correction
 * https://docs.opencv.org/3.4/d3/dc1/tutorial_basic_linear_transform.html
 
 Adaptive Filtering
-* https://docs.opencv.org/master/d7/d4d/tutorial_py_thresholding.html  
-* https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html  
+* https://docs.opencv.org/master/d7/d4d/tutorial_py_thresholding.html
+* https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html
