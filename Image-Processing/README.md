@@ -1,6 +1,8 @@
 # Image Processing
+A record of the image processing code for ball and goalpost detection.
 
-## Setup
+## Setting up PyCharm/Anaconda/OpenCV
+
 
 ## Content
 1. GUI Segmentation
