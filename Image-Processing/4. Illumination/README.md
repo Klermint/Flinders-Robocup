@@ -18,7 +18,7 @@ Histogram Equalisation
 * https://docs.opencv.org/master/d5/daf/tutorial_py_histogram_equalization.html 
 
 Gamma Correction
-* https://docs.opencv.org/3.4/d3/dc1/tutorial_basic_linear_transform.html  
+* https://docs.opencv.org/3.4/d3/dc1/tutorial_basic_linear_transform.html
 
 Adaptive Filtering
 * https://docs.opencv.org/master/d7/d4d/tutorial_py_thresholding.html  
