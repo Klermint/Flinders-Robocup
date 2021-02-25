@@ -24,8 +24,7 @@ while True:
     # get the current frame
     frame = camera.read()
     cv2.imshow('original frame', frame)
-    # resize, blur and convert to HSV
-    #frame = imutils.resize(frame, width=1000)
+    # blur and convert to HSV
     blurred = cv2.GaussianBlur(frame, (11, 11), 0)
     hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
     # construct a mask for colour, perform erosion & dilation
