@@ -1,6 +1,6 @@
 # Hough Transform
 
-In the contour finding method, the ball was detected using the largest contour however, if another similarly red object is within the frame, the program would detect that object instead of the ball. To overcome this, Hough Circle Transform is applied on the mask instead of contour detection. **(Explain how Hough Circle Transform works, Work in progress)**
+In the contour finding method, the ball was detected using the largest contour however, if another similarly red object is within the frame, the program would detect that object instead of the ball. To overcome this, Hough Circle Transform is applied on the mask instead of contour detection. **(Explain how Hough Circle Transform works, Work in progress, see documentation in microsoft teams)**
 
 This folder contains two seperate piece of code. The main.py file applies Hough Transform to an image. Here, you can test out different parameters of the Hough Transform with your own images. The video.py file applyies Hough Transform to a live video feed from the webcam similar to the Contour finding code.
 
