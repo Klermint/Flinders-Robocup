@@ -24,6 +24,8 @@ while True:
     # get the current frame
     frame = camera.read()
     cv2.imshow('original frame', frame)
+    
+    # Histogram Equailsation
     # convert to HSV
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     cv2.imshow('hsv', hsv)
@@ -36,8 +38,6 @@ while True:
     # merge back to hsv
     hsv_merge = cv2.merge([h, s, v_hist])
     cv2.imshow('hsv_merge', hsv_merge)
-    bgr = cv2.cvtColor(hsv_merge, cv2.COLOR_HSV2BGR)
-    cv2.imshow('bgr', bgr)
     # construct a mask for colour, perform erosion & dilation
     mask = cv2.inRange(hsv_merge, lower, upper)
     mask = cv2.erode(mask, None, iterations=2)
@@ -46,7 +46,6 @@ while True:
     # perform Hough Transform
     circles = cv2.HoughCircles(mask, cv2.HOUGH_GRADIENT, dp=1, minDist=1000,
                                param1=50, param2=15, minRadius=0, maxRadius=0)
-    # original parameters: (minDist=1000,param1=50, param2=15, minRadius=0, maxRadius=0)
     # proceed if there is a circle
     if circles is not None:
         circles = np.uint16(np.around(circles))
